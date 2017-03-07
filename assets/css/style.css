@@ -1,0 +1,38 @@
+html, body{
+	background: url(../images/bg-img.png)
+}
+
+.jumbotron {
+	text-align: center;
+}
+
+.panel-default {
+	border-color: navy;
+}
+
+.panel-default>.panel-heading, .jumbotron {
+	background-image: linear-gradient(to bottom,#337ab7 0,navy 100%);
+	color: white;
+} 
+
+table, .form-group {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	border-collapse: inherit;
+}
+
+#submit-btn {
+	margin: 10px;
+}
+
+.btn-default, .btn-default:hover, .btn-default:focus {
+    background-image: linear-gradient(to bottom,#5cb85c 0,#3c763d 100%);
+    color: white;
+    background-position: 0, 0;
+    border-color: #5cb85c;]
+}
+
+.btn-default {
+	text-shadow: none;
+}
