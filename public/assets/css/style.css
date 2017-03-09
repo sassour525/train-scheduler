@@ -36,3 +36,17 @@ table, .form-group {
 .btn-default {
 	text-shadow: none;
 }
+
+#add-train {
+	display: none;
+}
+
+#login-btn {
+	margin-top: -30px;
+    width: 150px;
+    float: right;
+}
+
+#help-text {
+	font-size: 10pt;
+}
