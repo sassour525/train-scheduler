@@ -2,19 +2,23 @@ html, body{
 	background: url(../images/bg-img.png)
 }
 
+/*align test in jumbotron*/
 .jumbotron {
 	text-align: center;
 }
 
+/*add border to panel*/
 .panel-default {
 	border-color: navy;
 }
 
+/*set background image for jumbotron and panel headings*/
 .panel-default>.panel-heading, .jumbotron {
 	background-image: linear-gradient(to bottom,#337ab7 0,navy 100%);
 	color: white;
 } 
 
+/*make table and input fields look alike*/
 table, .form-group {
 	padding-left: 10px;
 	padding-right: 10px;
@@ -22,10 +26,12 @@ table, .form-group {
 	border-collapse: inherit;
 }
 
+/*set margin for submit button*/
 #submit-btn {
 	margin: 10px;
 }
 
+/*overwrite bootstrap styles for button*/
 .btn-default, .btn-default:hover, .btn-default:focus {
     background-image: linear-gradient(to bottom,#5cb85c 0,#3c763d 100%);
     color: white;
@@ -33,14 +39,17 @@ table, .form-group {
     border-color: #5cb85c;]
 }
 
+/*overwrite bootstrap styles for button*/
 .btn-default {
 	text-shadow: none;
 }
 
+/*hide input div until user is authenticated*/
 #add-train {
 	display: none;
 }
 
+/*login btn styles*/
 #login-btn {
 	margin-top: -30px;
     width: 150px;
