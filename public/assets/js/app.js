@@ -14,7 +14,6 @@
 	var database = firebase.database();
 
 	firebase.auth().getRedirectResult().then(function(result) {
-		console.log(result);
 		if (result.credential) {
     	    // This gives you a Google Access Token. You can use it to access the Google API.
     	    token = result.credential.accessToken;
@@ -69,17 +68,11 @@
     		timeRemainder = (timeDiff % trainFrequency);
     		//Next Arrival
     		minutesAway = (trainFrequency - timeRemainder);
-    		//Minutes Away
-    		// var nextArrivalCov = moment().add(minutesAway, "minutes").format("hh:mm a");
-    		// console.log("Arrival: " + moment(minutesAway).format("hh:mm"));
-
-    		// nextArrival = nextArrivalCov.toString();
 
     		database.ref().push({
     			trainName: trainName,
     			trainDestination: trainDestination,
     			trainFrequency: trainFrequency,
-    			// nextArrival: nextArrival,
     			minutesAway: minutesAway
     		});
 
